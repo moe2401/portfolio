@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.sub-tours__cards {
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: rem(40);
+    row-gap: rem(80);
+  }
+}
+
+.sub-tours__item {
+  display: flex;
+  justify-content: center;
+}
+
+.sub-tours__item:not(:first-child) {
+  margin-top: rem(35);
+  @include mq("md") {
+    margin-top: rem(0);
+  }
+}
+
+.sub-tours__content {
+  margin-top: rem(40);
+}
+
+.sub-tours__pagenavi {
+  margin-top: rem(80);
+  @include mq("md") {
+    margin-top: rem(84);
+  }
+}

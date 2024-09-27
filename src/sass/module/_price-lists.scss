@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.options-lists__items {
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+  border-bottom: 1px solid $blue;
+  border-collapse: collapse;
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.options-lists__items:not(:first-child) {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

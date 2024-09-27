@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.breadcrumb.breadcrumb--white {
+  color: $white;
+  background-color: $blue;
+  padding-top: rem(88);
+  position: relative;
+  z-index: 19;
+  @include mq("md") {
+    padding-top: rem(98);
+  }
+}
+
+.breadcrumb__inner span {
+  font-size: rem(14);
+  font-family: $font-family-jp;
+}

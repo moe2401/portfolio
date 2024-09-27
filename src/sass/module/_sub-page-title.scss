@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.sub-page-title__main {
+  font-family: $font-family-en;
+  font-size: rem(40);
+  font-weight: bold;
+  color: $white;
+  line-height: 1;
+  white-space: nowrap;
+  text-transform: uppercase;
+  @include mq("md") {
+    font-size: rem(100);
+  }
+}

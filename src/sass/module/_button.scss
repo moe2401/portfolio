@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.button {
+  position: relative;
+  width: rem(202);
+  font-size: rem(14);
+  font-family: $font-family-en;
+  color: $blue;
+  display: inline-block;
+  padding: rem(16) rem(10);
+  line-height: calc(22 / 14);
+  z-index: 10;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px dashed $blue;
+  @include mq("md") {
+  font-size: rem(18);
+	}
+}
+
+.button.button--white {
+  color: $blue;
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/common/circle.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(200);
+  height: rem(120);
+  display: block;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%)scale(0); // 初期スケールを 1 に設定
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1); // 追加：スムーズなトランジションを設定
+  opacity: 0; // 追加：初期状態で非表示
+}
+
+.button:hover::after {
+  opacity: 1; // ホバー時に表示される
+  transform: translate(-50%, -50%)scale(1); // ホバー時のスケールを追加する例
+  top: 50%;
+  left: 50%;
+}
+
+.button.button--yellow {
+  color: $white;
+  border: 1px dashed $white;
+}
+
+.button.button--aboutUs {
+color: $blue;
+border: 1px dashed $blue;
+@include mq("md") {
+  color: $white;
+  border: 1px dashed $white;
+  }
+}
+
+
+
+.button.button--yellow::after {
+  color: $yellow;
+  background-image: url(../images/common/circle-yellow.png);
+}
+
+
+
+

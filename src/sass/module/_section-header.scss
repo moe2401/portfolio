@@ -1,0 +1,93 @@
+@use "global" as *;
+
+.section-header__title {
+  text-align: center;
+
+}
+
+.section-header__title span{
+  display: inline-block;
+  font-size: rem(40);
+  font-weight: bold;
+  font-family: $font-family-en;
+  text-transform: uppercase;
+  color: $blue;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(100);
+  }
+}
+
+.section-header__title span:first-child {
+  color: $yellow;
+}
+
+.section-header__title.section-header__title--aboutUs span{
+  @include mq("md") {
+    color: $yellow;
+
+	}
+}
+.section-header__title.section-header__title--aboutUs span:first-child {
+  @include mq("md") {
+    color: $white;
+
+	}
+}
+
+.section-header__title.section-header__title--voice span{
+  color: $yellow;
+}
+
+.section-header__title.section-header__title--voice span:first-child{
+  color: $white;
+}
+
+.section-header__title.section-header__title--white {
+  @include mq("md") {
+  writing-mode: vertical-rl;
+  }
+}
+
+.section-header__title.section-header__title--white span:first-child {
+    color: $white;
+}
+
+.section-header__title.section-header__title--contact {
+  @include mq("md") {
+    text-align: left;
+
+	}
+}
+
+.section-header__title.section-header__title--contact span{
+  font-size: rem(40);
+  font-weight: bold;
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(100);
+  }
+}
+
+.section-header__sub {
+  font-family: $font-family-jp;
+  font-size: rem(16);
+  color: $blue;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: rem(8);
+  font-weight: normal;
+  @include mq("md") {
+    margin-top: rem(8);
+  }
+}
+
+.section-header__sub.section-header__sub--white {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.section-header__sub.section-header__sub--contact {
+  margin-top: rem(-5);
+}

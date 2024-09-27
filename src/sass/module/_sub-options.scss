@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.sub-options__inner.inner {
+  @include mq("md") {
+    max-width: rem(750);
+  }
+}
+
+.sub-options__table {
+  width: 100%;
+  position: relative;
+}
+

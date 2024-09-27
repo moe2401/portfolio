@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.decoration {
+  position: relative;
+}
+
+.decoration::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    background-image: url(../images/common/leaf.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(200);
+    height: rem(100);
+    top: rem(81);
+    left: calc(50% - min(47vw, rem(570)));
+  }
+}
+
+.decoration.decoration--options::before {
+  @include mq("md") {
+    background-image: url(../images/common/surfer_2.png);
+    width: rem(250);
+    height: rem(200);
+    z-index: 1;
+	}
+}
+
+.decoration.decoration--faq::before {
+  @include mq("md") {
+    background-image: url(../images/common/icecream.png);
+    width: rem(250);
+    height: rem(200);
+    transform: rotate(-14deg);
+    z-index: 1;
+	}
+}
+
+
