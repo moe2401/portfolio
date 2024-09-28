@@ -46,13 +46,13 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
       <div class="tours__header section-header">
-        <p class="section-header__title js-animation">
+        <h2 class="section-header__title js-animation">
           <span>T</span>
           <span>o</span>
           <span>u</span>
           <span>r</span>
           <span>s</span>
-        </p>
+        </h2>
       </div>
       <div class="tours__swiper-wrap">
         <div class="js-tours-swiper swiper">
@@ -132,7 +132,7 @@
   <section class="about-us layout-about-us">
     <div class="about-us__inner inner">
       <div class="about-us__header section-header">
-        <p class="section-header__title section-header__title--aboutUs js-animation">
+        <h2 class="section-header__title section-header__title--aboutUs js-animation">
           <span>A</span>
           <span>b</span>
           <span>o</span>
@@ -141,28 +141,27 @@
           <span>&nbsp;</span>
           <span>u</span>
           <span>s</span>
-        </p>
+        </h2>
       </div>
 
       <div class="about-us__wrapper">
         <div class="about-us__img-wrap">
           <div class="about-us__img-left js-fade-up">
-            <div>
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_1.png" alt="カンガルーが横を向いている様子" />
-            </div>
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_1.png" alt="カンガルーが横を向いている様子" />
           </div>
 
           <div class="about-us__img-right">
-            <div>
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_2.jpg" alt="荒原の中にあるエアーズロック" />
-            </div>
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_2.jpg" alt="荒原の中にあるエアーズロック" />
           </div>
         </div>
 
         <div class="about-us__contents">
-          <h3 class="about-us__title">
-            Who<br />We Are?
-          </h3>
+          <div class="about-us__title-wrap">
+            <h3 class="about-us__title">
+              Who <br class="u-desktop" />
+              <span>We Are?</span>
+            </h3>
+          </div>
           <div class="about-us__text-wrap">
             <div class="about-us__text">
               私たちは、オーストラリア専門のツアーを提供し、壮大な自然、豊かな文化、そして多彩なアクティビティを体験できるユニークな旅をご提案します。<br />
@@ -182,7 +181,7 @@
   <section class="information layout-information">
     <div class="information__inner inner">
       <div class="information__header section-header">
-        <p class="section-header__title section-header__title--white js-animation">
+        <h2 class="section-header__title section-header__title--white js-animation">
           <span>I</span>
           <span>n</span>
           <span>f</span>
@@ -194,17 +193,17 @@
           <span>i</span>
           <span>o</span>
           <span>n</span>
-        </p>
+        </h2>
       </div>
 
       <div class="information__wrap">
         <div class="information__img js-inview">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information.jpg" alt="大きな根っこの木と男女が歩いている様子" />
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information.jpg" alt="" />
         </div>
 
         <div class="information__body">
           <div class="information__contents">
-            <span class="information__title">Nature</span>
+            <h3 class="information__title">Nature</h3>
             <p class="information__text">
               オーストラリアの自然と冒険は、息を呑むような景観とエキサイティングな体験を提供します。<br />グレートバリアリーフでは、シュノーケリングやダイビングで色とりどりの珊瑚や海洋生物と触れ合えます。さらに、ウルルの神秘的な姿や、アウトバックでのキャンプ、熱帯雨林のトレッキングなど、多彩なアクティビティが待っています。壮大な自然の中でのサファリツアーや、地元の文化に触れるエクスペリエンスを通じて、忘れられない冒険が広がるでしょう。
             </p>
@@ -223,12 +222,12 @@
   <section class="blog layout-blog">
     <div class="blog__inner inner">
       <div class="blog__header section-header">
-        <p class="section-header__title js-animation">
+        <h2 class="section-header__title section-header__title--blog js-animation">
           <span>B</span>
           <span>l</span>
           <span>o</span>
           <span>g</span>
-        </p>
+        </h2>
       </div>
 
       <ul class="blog__items blog-cards">
@@ -247,7 +246,7 @@
               <a href="<?php the_permalink(); ?>" class="blog-card js-blog-card">
                 <div class="blog-card__img">
                   <?php if (get_the_post_thumbnail()) : ?>
-                    <img src="<?php the_post_thumbnail_url('full'); ?>" alt="<?php the_title(); ?>" />
+                    <img src="<?php the_post_thumbnail_url('full'); ?>" alt="" />
                   <?php else : ?>
                     <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpg" alt="no-image" />
                   <?php endif; ?>
@@ -290,7 +289,7 @@
   <section class="options layout-options">
     <div class="options__inner inner">
       <div class="options__header section-header">
-        <p class="section-header__title section-header__title--white js-animation">
+        <h2 class="section-header__title section-header__title--white js-animation">
           <span>O</span>
           <span>p</span>
           <span>t</span>
@@ -298,7 +297,7 @@
           <span>o</span>
           <span>n</span>
           <span>s</span>
-        </p>
+        </h2>
       </div>
       <div class="options__contents">
         <?php
@@ -365,13 +364,13 @@
     <div class="voice__inner inner">
       <div class="voice__wave">
         <div class="voice__header section-header">
-          <p class="section-header__title section-header__title--voice js-animation">
+          <h2 class="section-header__title section-header__title--voice js-animation">
             <span>V</span>
             <span>o</span>
             <span>i</span>
             <span>c</span>
             <span>e</span>
-          </p>
+          </h2>
         </div>
 
         <ul class="voice__items voice-cards">

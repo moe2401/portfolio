@@ -2,7 +2,6 @@
 
 .section-header__title {
   text-align: center;
-
 }
 
 .section-header__title span{
@@ -25,15 +24,24 @@
 .section-header__title.section-header__title--aboutUs span{
   @include mq("md") {
     color: $yellow;
-
 	}
 }
 .section-header__title.section-header__title--aboutUs span:first-child {
   @include mq("md") {
     color: $white;
-
 	}
 }
+
+// .section-header__title.section-header__title--blog span{
+//   @include mq("md") {
+//     color: $yellow;
+// 	}
+// }
+// .section-header__title.section-header__title--blog span:first-child {
+//   @include mq("md") {
+//     color: $blue;
+// 	}
+// }
 
 .section-header__title.section-header__title--voice span{
   color: $yellow;

@@ -254,9 +254,18 @@ a {
 
 .about-us__title {
 	color: #004165;
+	display: inline-block;
 	font-family: "Roboto", sans-serif;
 	font-size: 2.5rem;
 	line-height: 1;
+	text-align: left;
+}
+
+.about-us__title-wrap {
+	align-items: flex-start;
+	display: flex;
+	justify-content: left;
+	width: 100%;
 }
 
 .about-us__title.about-us__title--white {
@@ -290,10 +299,10 @@ a {
 }
 
 .about-us__img-left {
+	bottom: 0;
 	position: absolute;
-	top: -13.4%;
-	transform: rotate(-8deg);
 	width: 37.101%;
+	z-index: 20;
 }
 
 .about-us__img-left.about-us__img-left--noShow {
@@ -309,7 +318,17 @@ a {
 
 .about-us__img-right {
 	margin-left: auto;
+	position: relative;
 	width: 81.449%;
+}
+
+.about-us__img-right::before {
+	background-color: rgba(0, 0, 0, 0.07);
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .about-us__img-right.about-us__img-right--subPage {
@@ -324,7 +343,8 @@ a {
 }
 
 .about-us__contents {
-	margin-top: 3.4375rem;
+	margin-top: 1.75rem;
+	z-index: 50;
 }
 
 .about-us__contents.about-us__contents--sub {
@@ -346,15 +366,18 @@ a {
 }
 
 .blog-card__img {
-	transition: transform 0.6s ease;
 	width: 100%;
 }
 
-.blog-card__img.blog-card__img--animation img {
+.blog-card__img {
+	overflow: hidden;
+}
+
+.blog-card__img img {
 	transition: all 0.5s ease-in-out;
 }
 
-.blog-card__img.blog-card__img--animation img:hover {
+.blog-card:hover img {
 	transform: scale(1.1);
 }
 
@@ -397,11 +420,6 @@ a {
 	grid-gap: 2.375rem;
 	display: grid;
 	gap: 2.375rem;
-}
-
-.blog-cards__item:hover {
-	cursor: pointer;
-	opacity: 0.7;
 }
 
 .blog::before {
@@ -545,11 +563,11 @@ body {
 }
 
 .contact-form__input input::-moz-placeholder {
-	color: #c0e7fb;
+	color: rgba(51, 51, 51, 0.5);
 }
 
 .contact-form__input input::placeholder {
-	color: #c0e7fb;
+	color: rgba(51, 51, 51, 0.5);
 }
 
 .contact-form__checkbox {
@@ -765,6 +783,7 @@ body {
 .contact__detail {
 	margin-top: 2.5rem;
 	text-align: center;
+	width: 100%;
 }
 
 .contact__lists {
@@ -772,7 +791,7 @@ body {
 }
 
 .contact__list {
-	font-size: 1rem;
+	font-size: 1.125rem;
 }
 
 .contact__list:not(:first-child) {
@@ -786,7 +805,7 @@ body {
 
 .contact__map {
 	height: 0;
-	padding-top: 54.23%;
+	padding-top: 56.25%;
 	position: relative;
 	width: 100%;
 }
@@ -1689,11 +1708,16 @@ body {
 
 .popular-card__img {
 	max-width: 7.5625rem;
+	overflow: hidden;
 	width: 100%;
 }
 
-.popular-card__img:hover {
-	opacity: 0.7;
+.popular-card:hover .popular-card__img img {
+	transform: scale(1.1);
+}
+
+.popular-card__img img {
+	transition: all 0.5s ease-in-out;
 }
 
 .popular-card__img img {
@@ -2119,7 +2143,7 @@ body {
 	color: #004165;
 	cursor: pointer;
 	font-family: "Noto Sans JP", sans-serif;
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 .sub-blog__archive-lists {
@@ -2140,11 +2164,11 @@ body {
 
 .sub-blog__archive-summary::before,
 .sub-blog__archive-item a::before {
-	border-bottom: 10px solid transparent;
-	border-left: 17px solid #004165;
+	border-bottom: 5px solid transparent;
+	border-left: 9px solid #004165;
 	border-right: 0;
 	border-style: solid;
-	border-top: 10px solid transparent;
+	border-top: 5px solid transparent;
 	content: "";
 	display: inline-block;
 	height: 0;
@@ -2200,6 +2224,7 @@ body {
 	font-size: 2.5rem;
 	font-weight: bold;
 	line-height: 1;
+	text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
 	text-transform: uppercase;
 	white-space: nowrap;
 }
@@ -2401,6 +2426,7 @@ body {
 	font-size: 2.5rem;
 	font-weight: bold;
 	line-height: 1.2;
+	text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
 	text-transform: uppercase;
 }
 
@@ -2412,6 +2438,7 @@ body {
 	color: #fff;
 	font-family: "Roboto", sans-serif;
 	font-size: 1rem;
+	text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
 }
 
 .title__main.title__main--green {
@@ -2525,12 +2552,8 @@ body {
 	line-height: 1;
 }
 
-.tours-card__price-discount.tours-card__price-discount--small {
-	font-size: 2rem;
-}
-
 .tours-card__price {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	position: relative;
 }
 
@@ -2544,18 +2567,18 @@ body {
 	width: 100%;
 }
 
-.tours-card__price.tours-card__price--small {
-	font-size: 1.25rem;
-}
-
 .tours-card__price-discount {
 	color: #004165;
 	font-size: 2rem;
 	margin-left: 1.0625rem;
 }
 
+.tours-card__price.tours-card__price--small {
+	font-size: 1.125rem;
+}
+
 .tours-card__price-discount.tours-card__price-discount--small {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .tours-card__text-box {
@@ -2830,10 +2853,9 @@ html {
 
 .about-us__title {
 	color: #fff;
-	font-size: 5rem;
+	font-size: 4.375rem;
 	line-height: 1.25;
 	margin-top: 0;
-	width: 100%;
 }
 
 .about-us__title.about-us__title--white {
@@ -2860,10 +2882,6 @@ html {
 	color: #fff;
 }
 
-.about-us__img-left {
-	top: -12%;
-}
-
 .about-us__img-left.about-us__img-left--noShow {
 	display: block;
 }
@@ -2881,7 +2899,6 @@ html {
 	position: absolute;
 	top: 57%;
 	transform: translate(-50%, -50%);
-	width: 100%;
 }
 
 .about-us__contents.about-us__contents--sub {
@@ -3027,8 +3044,13 @@ html {
 }
 
 .contact__detail {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	margin-left: 1.25rem;
 	margin-top: 0;
+	width: 30%;
 }
 
 .contact__lists-wrap {
@@ -3036,15 +3058,16 @@ html {
 }
 
 .contact__lists {
-	text-align: left;
+	text-align: center;
 }
 
 .contact__map-wrap {
 	margin-top: 0rem;
+	width: 70%;
 }
 
 .contact__button.contact__button--margin {
-	margin-top: 1rem;
+	margin-top: 2rem;
 }
 
 .decoration::before {
@@ -3405,8 +3428,7 @@ html {
 	height: 12.5625rem;
 	left: calc(50% - min(47.5vw, 38.8125rem));
 	position: absolute;
-	top: -7.5rem;
-	transform: rotate(10deg);
+	top: -12.5625rem;
 	width: 27.3125rem;
 }
 
@@ -3830,7 +3852,7 @@ html {
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
-	height: 50%;
+	height: 42%;
 	position: absolute;
 	right: calc(50% - min(50vw, 81.25rem));
 	top: -42%;

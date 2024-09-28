@@ -49,8 +49,8 @@
           <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/logo-portfolio_2.png" alt="imagine tour" />
         </div>
         <div class="footer__sns">
-          <a href="https://www.facebook.com" target=”_blank” class="footer__sns-icon"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/sns-icon_1.png" alt="facebookのアイコン" /></a>
-          <a href="https://www.instagram.com" target=”_blank” class="footer__sns-icon"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/sns-icon_2.png" alt="インスタグラムのアイコン" /></a>
+          <a href="https://www.facebook.com" target=”_blank” class="footer__sns-icon"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/sns-icon_1.png" alt="facebook" /></a>
+          <a href="https://www.instagram.com" target=”_blank” class="footer__sns-icon"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/sns-icon_2.png" alt="インスタグラム" /></a>
         </div>
       </div>
 

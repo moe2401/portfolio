@@ -26,7 +26,7 @@
                   <a href="<?php the_permalink(); ?>" class="blog-card">
                     <div class="blog-card__img blog-card__img--animation">
                       <?php if (get_the_post_thumbnail()) : ?>
-                        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="<?php echo esc_attr(get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true)); ?>" />
+                        <img src="<?php the_post_thumbnail_url("full"); ?>" alt="" />
                       <?php else : ?>
                         <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/no-image.jpg" alt="no-image" />
                       <?php endif; ?>

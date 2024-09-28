@@ -22,16 +22,16 @@
         <div class="sub-information__tab tab-info">
           <ul class="tab-info__menu">
             <li class="tab-info__menu-item js-tab-info-menu current" data-number="tab01">
-              <span>NATURE</span>
+              <h2>NATURE</h2>
             </li>
 
             <li class="tab-info__menu-item js-tab-info-menu" data-number="tab02">
-              <span>CULTURE</span>
+              <h2>CULTURE</h2>
             </li>
 
             <li class="tab-info__menu-item js-tab-info-menu" data-number="tab03">
               <div class="tab-info__img u-desktop"></div>
-              <span>POPULAR</span>
+              <h2>POPULAR</h2>
             </li>
           </ul>
 

@@ -100,13 +100,11 @@
 
 .sub-blog__archive-summary,
 .sub-blog__archive-item {
-  font-size: rem(24);
+  font-size: rem(16);
   font-family: $font-family-jp;
   color: $blue;
   cursor: pointer;
 }
-
-
 
 .sub-blog__archive-lists {
   display: none;
@@ -131,9 +129,9 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 17px solid $blue;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 9px solid $blue;
   border-right: 0;
   margin-right: rem(8);
 }

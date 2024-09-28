@@ -134,12 +134,9 @@
   color: $blue;
 }
 
-.tours-card__price-discount.tours-card__price-discount--small {
-  font-size: rem(32);
-}
 
 .tours-card__price {
-  font-size: rem(20);
+  font-size: rem(16);
   position: relative;
 }
 
@@ -153,9 +150,7 @@
   left: 0;
 }
 
-.tours-card__price.tours-card__price--small {
-  font-size: rem(20);
-}
+
 
 .tours-card__price-discount {
   font-size: rem(32);
@@ -167,8 +162,12 @@
   }
 }
 
+.tours-card__price.tours-card__price--small {
+  font-size: rem(18);
+}
+
 .tours-card__price-discount.tours-card__price-discount--small {
-  font-size: rem(32);
+  font-size: rem(24);
 }
 
 .tours-card__text-box {

@@ -97,7 +97,7 @@
                                                 <span class="tours-card__price-discount"><?php echo esc_html($formatted_discount); ?></span>
                                             </div>
 
-                                            <div class="tours-card__text-box u-desktop">
+                                            <div class="tours-card__text-box">
                                                 <p class="tours-card__text">
                                                     <?php the_content(); ?>
                                                 </p>
