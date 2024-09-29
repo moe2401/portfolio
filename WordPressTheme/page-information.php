@@ -30,7 +30,6 @@
             </li>
 
             <li class="tab-info__menu-item js-tab-info-menu" data-number="tab03">
-              <div class="tab-info__img u-desktop"></div>
               <h2>POPULAR</h2>
             </li>
           </ul>

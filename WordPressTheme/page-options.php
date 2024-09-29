@@ -46,9 +46,17 @@
         ?>
             <div class="options-lists__items options-list">
               <p class="options-list__title">
-                <span></span>
+                <span class="option-list__icon">
+                  <?php
+                  $icon = wp_get_attachment_image_src($items[0]['add_icon'], 'full'); // フィールドからアイコン画像を取得
+
+                  if ($icon) : ?>
+                    <img src="<?php echo esc_url($icon[0]); ?>" alt="<?php echo esc_attr($category); ?>のアイコン" />
+                  <?php endif; ?>
+                </span>
                 <?php echo esc_html($category); ?>
               </p>
+
               <dl class="options-list__content">
                 <?php
                 foreach ($items as $item) :

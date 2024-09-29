@@ -17,15 +17,10 @@
   }
 }
 
-.options-list__title span::before {
-  content: "";
-  background-image: url(../images/common/footer-koala.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+.option-list__icon {
   width: rem(24);
   height: rem(24);
-  display: inline-block;
-  margin-right: rem(8);
+margin-right: rem(8);
   @include mq("md") {
     width: rem(64);
     height: rem(70);

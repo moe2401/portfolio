@@ -16,26 +16,25 @@
 
   <section class="sub-about-us layout-sub-about-us">
     <div class="sub-about-us__inner inner">
-      <div class="sub-about-us__wrapper">
-        <div class="about-us__img-wrap about-us">
-          <div class="about-us__img-left about-us__img-left--noShow">
-            <div>
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_1.png" alt="カンガルーが横を向いている様子" />
-            </div>
+      <div class="sub-about-us__wrapper about-us">
+        <div class="about-us__img-wrap">
+          <div class="about-us__img-left">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_1.png" alt="カンガルーが横を向いている様子" />
           </div>
 
-          <div class="about-us__img-right about-us__img-right--subPage">
-            <div>
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_2.jpg" alt="荒原の中にあるエアーズロック" />
-            </div>
+          <div class="about-us__img-right">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_2.jpg" alt="荒原の中にあるエアーズロック" />
           </div>
         </div>
 
-        <div class="about-us__contents about-us__contents--sub">
-          <h3 class="about-us__title about-us__title--white">
-            Who<br />We Are?
-          </h3>
-          <div class="about-us__text-wrap about-us__text-wrap--margin">
+        <div class="about-us__contents">
+          <div class="about-us__title-wrap">
+            <h3 class="about-us__title">
+              Who <br class="u-desktop" />
+              <span>We Are?</span>
+            </h3>
+          </div>
+          <div class="about-us__text-wrap">
             <div class="about-us__text">
               私たちは、オーストラリア専門のツアーを提供し、壮大な自然、豊かな文化、そして多彩なアクティビティを体験できるユニークな旅をご提案します。<br />
               すべての旅が特別な思い出となるよう、一人ひとりに寄り添ったサービスで、心に残る冒険をお約束します。

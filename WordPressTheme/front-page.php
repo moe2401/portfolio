@@ -146,7 +146,7 @@
 
       <div class="about-us__wrapper">
         <div class="about-us__img-wrap">
-          <div class="about-us__img-left js-fade-up">
+          <div class="about-us__img-left">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about-us_1.png" alt="カンガルーが横を向いている様子" />
           </div>
 

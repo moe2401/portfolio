@@ -268,13 +268,6 @@ a {
 	width: 100%;
 }
 
-.about-us__title.about-us__title--white {
-	color: #fff;
-	left: 1.4375rem;
-	position: absolute;
-	top: 1.375rem;
-}
-
 .about-us__wrapper {
 	margin-top: 3.125rem;
 }
@@ -288,10 +281,6 @@ a {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	line-height: 1.7;
-}
-
-.about-us__text.about-us__text--margin {
-	margin-top: 2.5rem;
 }
 
 .about-us__img-wrap {
@@ -331,10 +320,6 @@ a {
 	width: 100%;
 }
 
-.about-us__img-right.about-us__img-right--subPage {
-	width: 100%;
-}
-
 .about-us__img-right img {
 	-o-object-fit: cover;
 	aspect-ratio: 281/186;
@@ -345,10 +330,6 @@ a {
 .about-us__contents {
 	margin-top: 1.75rem;
 	z-index: 50;
-}
-
-.about-us__contents.about-us__contents--sub {
-	margin-top: 2.5rem;
 }
 
 .about-us__button {
@@ -528,6 +509,11 @@ body {
 	font-family: "Noto Sans JP", sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
+}
+
+.contact-form__label-info {
+	display: flex;
+	justify-content: space-between;
 }
 
 .contact-form__label span {
@@ -1515,12 +1501,7 @@ body {
 	padding: 0.5rem 0rem;
 }
 
-.options-list__title span::before {
-	background-image: url(../images/common/footer-koala.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	content: "";
-	display: inline-block;
+.option-list__icon {
 	height: 1.5rem;
 	margin-right: 0.5rem;
 	width: 1.5rem;
@@ -2198,9 +2179,22 @@ body {
 	height: inherit;
 }
 
-.sub-mv img {
+.sub-mv__img img {
 	-o-object-fit: cover;
 	object-fit: cover;
+	width: 100%;
+}
+
+.sub-mv__img {
+	position: relative;
+}
+
+.sub-mv__img::before {
+	background-color: rgba(0, 0, 0, 0.07);
+	content: "";
+	height: 100%;
+	position: absolute;
+	top: 0;
 	width: 100%;
 }
 
@@ -2224,7 +2218,6 @@ body {
 	font-size: 2.5rem;
 	font-weight: bold;
 	line-height: 1;
-	text-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
 	text-transform: uppercase;
 	white-space: nowrap;
 }
@@ -2290,8 +2283,6 @@ body {
 	color: #004165;
 	cursor: pointer;
 	font-family: "Noto Sans JP", sans-serif;
-	font-size: 0.875rem;
-	font-weight: bold;
 	max-width: 6.375rem;
 	padding: 0.625rem 0.5rem;
 	text-align: center;
@@ -2300,6 +2291,10 @@ body {
 
 .tab-info__menu-item:not(:first-child) {
 	margin-left: 1.1875rem;
+}
+
+.tab-info__menu-item h2 {
+	font-size: 0.875rem;
 }
 
 .tab-info__menu-item.current {
@@ -2858,12 +2853,6 @@ html {
 	margin-top: 0;
 }
 
-.about-us__title.about-us__title--white {
-	left: 0rem;
-	position: relative;
-	top: 0rem;
-}
-
 .about-us__wrapper {
 	margin-top: 7.5rem;
 }
@@ -2874,21 +2863,12 @@ html {
 	width: 100%;
 }
 
-.about-us__text-wrap.about-us__text-wrap--margin {
-	margin-top: 1.25rem;
-}
-
 .about-us__text {
 	color: #fff;
 }
 
 .about-us__img-left.about-us__img-left--noShow {
 	display: block;
-}
-
-.about-us__img-right.about-us__img-right--subPage {
-	margin-right: 0;
-	width: 81.449%;
 }
 
 .about-us__contents {
@@ -2899,12 +2879,6 @@ html {
 	position: absolute;
 	top: 57%;
 	transform: translate(-50%, -50%);
-}
-
-.about-us__contents.about-us__contents--sub {
-	left: 57.8%;
-	margin-top: 0rem;
-	top: 40%;
 }
 
 .about-us__button {
@@ -2998,18 +2972,22 @@ html {
 }
 
 .contact-form__select {
+	margin-left: 2.5rem;
 	margin-top: 0rem;
 }
 
 .contact-form__input {
+	margin-left: 2.5rem;
 	margin-top: 0rem;
 }
 
 .contact-form__checkbox {
+	margin-left: 2.5rem;
 	margin-top: 0rem;
 }
 
 .contact-form__textarea {
+	margin-left: 2.5rem;
 	margin-top: 0rem;
 }
 
@@ -3361,7 +3339,7 @@ html {
 	width: 40.571%;
 }
 
-.options-list__title span::before {
+.option-list__icon {
 	height: 4.375rem;
 	margin-top: 1.625rem;
 	width: 4rem;
@@ -3697,7 +3675,6 @@ html {
 .tab-info__menu-item {
 	align-items: center;
 	display: flex;
-	font-size: 1.5rem;
 	gap: 0.5rem;
 	justify-content: center;
 	line-height: 1;
@@ -3709,6 +3686,10 @@ html {
 
 .tab-info__menu-item:not(:first-child) {
 	margin-left: 5.625rem;
+}
+
+.tab-info__menu-item h2 {
+	font-size: 1.5rem;
 }
 
 .tab-info__menu-item span {

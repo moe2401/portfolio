@@ -9,8 +9,6 @@
   padding: rem(10) rem(8);
   max-width: rem(102);
   width: 100%;
-  font-size: rem(14);
-  font-weight: bold;
   color: $blue;
   background-color: $yellow;
   text-align: center;
@@ -26,16 +24,24 @@
     line-height: 1;
     padding: rem(13) rem(0);
     max-width: rem(300);
-    font-size: rem(24);
     text-align: right;
   }
 }
+
+
 
 .tab-info__menu-item:not(:first-child) {
   margin-left: rem(19);
   @include mq("md") {
     margin-left: rem(90);
   }
+}
+
+.tab-info__menu-item h2 {
+  font-size: rem(14);
+  @include mq("md") {
+    font-size: rem(24);
+	}
 }
 
 .tab-info__menu-item.current {

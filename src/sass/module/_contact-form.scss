@@ -32,6 +32,11 @@
   }
 }
 
+.contact-form__label-info {
+  display: flex;
+  justify-content: space-between;
+}
+
 .contact-form__label span {
   font-size: rem(12);
   font-weight: normal;
@@ -46,9 +51,9 @@
 .contact-form__select {
   margin-top: rem(16);
   flex-grow: 1;
-
   @include mq("md") {
     margin-top: rem(0);
+    margin-left: rem(40);
   }
 }
 
@@ -58,6 +63,7 @@
   flex-grow: 1;
   @include mq("md") {
     margin-top: rem(0);
+    margin-left: rem(40);
   }
 }
 
@@ -79,6 +85,7 @@
   margin-top: rem(12);
   @include mq("md") {
     margin-top: rem(0);
+    margin-left: rem(40);
   }
 }
 
@@ -132,6 +139,7 @@
   margin-top: rem(16);
   @include mq("md") {
     margin-top: rem(0);
+    margin-left: rem(40);
   }
 }
 
